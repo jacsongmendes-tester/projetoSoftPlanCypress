@@ -1,0 +1,23 @@
+{
+  "name": "treinamentoqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^5.0.0",
+    "cypress-cucumber-preprocessor": "^2.5.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test:all": "cypress run --browser chrome --no-exit",
+    "test:TC01": "cypress-tags run -e TAGS=@TC-001 --browser chrome --no-exit",
+    "test:TC02": "cypress-tags run -e TAGS=@TC-002 --browser chrome --no-exit"
+ 
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "nonGlobalStepDefinitions": false
+  },
+  "author": "Jacson Gomes Mendes",
+  "license": "ISC"
+}
