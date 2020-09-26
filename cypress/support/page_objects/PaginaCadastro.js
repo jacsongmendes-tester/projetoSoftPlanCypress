@@ -38,7 +38,16 @@ class PaginaCadastro {
     }
     //Funçao para validar lista de cadastro
     validarListaCadastro(nome, email) {
-        cy.get(elementosPagina.validaLista()).should('contain', nome, email)
+        nome
+         cy.get(elementosPagina.validaLista()).each(($el) => {
+            if(dadosPagina.includes(nome)) {
+                cy.log('Nome validado em lista com sucesso')
+            }else if(dadosPagina.includes(email)){
+                cy.log('Email validado em lista com sucesso')
+            }else{
+               cy.log('Usuario nao existe na lista')
+           }
+        })
     }
 
 }

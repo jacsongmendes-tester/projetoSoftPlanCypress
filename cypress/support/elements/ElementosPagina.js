@@ -6,17 +6,7 @@ class ElementosPagina {
     botaoCadastrar = () => { return 'button.btn-success' }
     validaTexto = () => { return 'h5' }
     validaLista = () => { return 'ul.list-group li' }
-    botaoPaginaLista = () => { return 'a[routerlink="usuarios"]' }
-    
-   
-//    botaoCliqueMe = () => { return 'input[id="buttonSimple"]' }
-  //  alert = () => { return 'input[id="alert"]' }
-  //     botaoConfirm = () => { return 'input[id="confirm"]' }
-   //    botaoPrompt = () => { return 'input[id="prompt"]' }
-   //    tabela = () => { return '#tabelaSemJSF' }
-   //    tabelaUsuario = () => { return 'table[id="elementosForm:tableUsuarios"' }
-    //   botaoPopUp = () => { return 'input[id="buttonPopUpEasy"]' }
-      // botaoPopUpMal = () => { return 'input[id="buttonPopUpHard"]' }
-}
+    botaoPaginaLista = () => { return 'a[routerlink="usuarios"]' }   
+} 
 
 export default ElementosPagina;
